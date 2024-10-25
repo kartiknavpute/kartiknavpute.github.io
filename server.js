@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 // Serve static files (like your HTML)
-app.use(express.static('public')); // put your HTML and CSS in the 'public' folder
+app.use(express.static('/')); // put your HTML and CSS in the 'public' folder
 
 // POST route to handle form submission
 app.post('/send-email', (req, res) => {
